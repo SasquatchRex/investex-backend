@@ -1,13 +1,13 @@
 {
     "builds": [{
-        "src": "investexBackend/wsgi.py",
+        "src": "InvestexBackend/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "investexBackend/wsgi.py"
+            "dest": "InvestexBackend/wsgi.py"
         }
     ]
 }
